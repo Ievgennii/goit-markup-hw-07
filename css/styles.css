@@ -75,6 +75,15 @@ img {
   padding: 94px 0;  
 }
 
+/* Button */
+.button {
+  color: var(--title-color);
+  background: var(--primary-white-color);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+
 
 /* Header */
 
@@ -208,8 +217,6 @@ img {
   fill: currentColor;
 }
 
-
-
 /* Hero */
 .hero {
   background-color: var(--background-hero-color);
@@ -230,7 +237,7 @@ img {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -246,16 +253,7 @@ img {
   width: 696px;
 }
 
-/* Button */
-.button {
-  color: var(--title-color);
-  background: var(--primary-white-color);
-  cursor: pointer;
-  border: 0;
-  border-radius: 4px;
-}
-
-.hero .button {
+.hero__button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -265,21 +263,7 @@ img {
   padding: 10px 32px;
 
   box-shadow: var(--box-shadow);
-}
 
-.portfolio .button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  padding: 6px 22px;
-}
-
-.button.primary {
   color: var(--primary-white-color);
   background: var(--accent-color);
 
@@ -291,18 +275,28 @@ img {
     outline var(--transition);
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.hero__button:hover,
+.hero__button:focus {
   outline: 1px solid var(--subscription-hover-color);
   background: var(--subscription-hover-color);
   box-shadow: var(--box-shadow);
 }
 
-.button.primary:active {
+.hero__button:active {
   background-color: var(--activ-color);
 }
 
-.button.secondary {
+.portfolio__button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+
   color: var(--title-color);
   background: var(--background-button-color);
   cursor: pointer;
@@ -311,8 +305,8 @@ img {
     box-shadow var(--transition);
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -320,7 +314,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button.secondary:active {
+.portfolio__button:active {
   background-color: var(--activ-color);
   color: var(--title-color);
 }
