@@ -37,20 +37,18 @@ p {
   margin: 0;
 }
 
+/* Сброс маркерів списків */
+
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-/* Сброс маркерів списків */
-.list {
-  list-style: none;
 }
 
 /* conteiner */
@@ -92,11 +90,6 @@ img {
 }
 
 .page-nav {
-  display: flex;
-  align-items: center;
-}
-
-.flex {
   display: flex;
   align-items: center;
 }
@@ -286,8 +279,6 @@ img {
   background-color: var(--activ-color);
 }
 
-
-
 /* Benefits*/
 
 .benefits {
@@ -329,14 +320,19 @@ img {
   background-position: center;
 }
 
-
-
 .benefits__text {
   max-width: 270px;
 }
 
-/* Work and Our team */
-.work-title,
+/* Our specialization and Our team */
+
+.specialization__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.specialization__title,
 .team-title,
 .regular-clients-title {
   color: var(--title-color);
@@ -348,17 +344,16 @@ img {
   margin-bottom: 50px;
 }
 
-.work-list {
+.specialization__item {
   position: relative;
 }
 
-.work-paragraph {
+.specialization__text {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
-
-  /* margin: 27px 0; */
+  
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
   text-align: center;
